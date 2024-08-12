@@ -20,7 +20,7 @@ document.getElementById('login-btn').addEventListener ('click', () => {
     .then((userCredential) => {
     // Redireciona para a página do jogo
     if(email=='diogosouzalmeida2@gmail.com' && password){
-      window.location.href = 'teladoAdm.html';
+      window.location.href = 'telaDoClient.html'
     }
     else{
  window.location.href='telaDoClient.html'
