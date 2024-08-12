@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="telaDoAdm.css">
+
+<script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore-compat.js"></script>
+</head>
+
+<body>
+   
+       <div class="cabecalho">
+        <p id="botao_menu" class="botao_menu">&#x2261;</p>
+        <div class="title" id="title">
+            <h1>Coisinhas da elza</h1>
+        </div>
+             <img src="fotos/OIP-removebg-preview (2).png"  class="simboloDoWtsap" id="simboloDoWtsap">
+             <img src="fotos/OIP (2).jpeg" class="insta">
+       </div>  
+
+
+        <div class="menu_geral">
+        <h1 id="tituloMenu">Menu</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+     <br>
+    <p id="botao_adicionar"> &#10133; Adicionar</p>
+   <br>
+   <br>
+   <hr>
+   <br>
+   <p id="botao_excluir">🗑️  Excluir</p>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <p id="botao_editar">🖊️ Editar</p>
+    <br>
+    <br>
+    <hr>
+   </div>
+
+
+
+
+    <div class="menu_adicionar" id="menu_adicionar" >
+
+        <h1 id="texto">Adiocione o produto:</h1>
+       
+        <p id="botao_sairDoMenu_adicionar">&#x274C;</p>
+         <label for="inputFile" class="input" id="label">Clique aqui</label>
+         <input type="file" id="inputFile" class="inputFile" name="inputFile"  style="display: none;"><br><br>
+ 
+         <div class="botao_Nome">
+            <form data-js="games-list">
+                Nome do produto:<input type="text" id="nomeDoProduto" class="nomeDoProduto"><br><br>
+                Preço do produto:<input type="number" id="preco" class="preco"><br>
+             
+            </div>
+            <input type="reset" value="limpar" id="limpar">
+           
+            </form>
+            <button id="botao_concluir">concluir</button>
+     </div>
+  
+     <div class="menuEditar">
+        <p id="botao_sairDoMenu_editar">&#x274C;</p>
+        <h1 id="texto">Edite:</h1>
+          <br>
+        <form>
+           Novo nome do produto: <input type="text" id="novoNomeDoProduto" class="novoNomeDoProduto"><br><br>
+           Novo preco do produto:<input type="number" id="novoPreco" class="novoPreco">
+        </form>
+        <br>
+        <button id="botao_concluir_editar">Concluir</button>
+
+     </div>
+     
+<br>
+     <div class="localDosProdutos">
+    
+     </div>
+     <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore-compat.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-auth-compat.js"></script>
+    <script src="telaDoAdm.js"></script>
+
+
+
+    
+</body>
+</html>
+
+

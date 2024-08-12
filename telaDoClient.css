@@ -1,0 +1,210 @@
+*{
+    padding: 0;
+    margin: 0;
+  
+  
+}
+body{
+    overflow-x: hidden; 
+}
+
+.localDosProdutos {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:  21px; 
+    justify-items: flex-start;
+}
+.nomeDoProduto,.preco{
+    border-radius: 8px;
+    width: 114px;
+    height: 27px;   
+    margin: 1%;
+}
+#paragrafoPreco{
+    margin-top:20px ;
+}
+.produtoTitulo{
+    display: flex;
+    text-align: left;/* Alinha verticalmente o checkbox e o título */
+  
+}
+.botao_checkbox{
+    position: absolute;
+  width:30px;
+  height: 40px;
+  z-index:  7;
+  margin-top: 0px;
+  right: 5%;
+z-index: 0;
+ 
+}
+#titleProduto {
+    font-size: 30px;
+  
+    text-align: center;
+
+}
+#imgProduto{
+    
+    width: 250px;
+    height: 180px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px#cc8fab;
+    pointer-events: none;
+}
+.produtos{
+    position: relative;
+    text-align: center;
+    height: 320px;
+    width: 300px;
+    border:none;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px 3px rgb(145, 141, 141);
+    text-align: center;
+    margin-left:8px;
+
+}
+.cabecalho {
+    width: 100%;
+    background-color: #ec5db7;
+    color: azure;
+    display: flex;
+    align-items: center;
+    box-shadow: #c4c4c423 0px 7px 5px;
+    height: 90px;
+    padding: 0 20px; /* Adiciona padding para afastar elementos das bordas */
+    position: relative;
+}
+
+.titleCarrinho{
+    font-size: 60px;
+    color: #f5addd;
+}
+#botao_sairDo_carrinho{
+position: absolute;
+margin-top: 15px;
+font-size: 35px;
+right:2%;
+}
+
+
+.simboloDoWtsap {
+   
+    width: 50px;
+    right: 90px; /* Ajuste conforme necessário */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+}
+.insta{
+    width: 50px;
+    right: 5px; /* Ajuste conforme necessário */
+    display: flex;
+     text-align: center;
+    align-items: center;
+    margin-right: 25px;
+    cursor: pointer;
+   
+    border:-2px -2px -2px -2px;
+    border-radius:24px
+}
+.carrinho {
+    position: absolute;
+    width: 40px;
+    right: 4%;
+    bottom: 6%;
+}
+.carrinho:hover{
+    width: 50px;
+}
+#botao_carrinho {
+    background-color: transparent;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 15px;
+    font-size: 20px;
+    height: 55px;
+    width: 55px;
+    z-index: 2;
+    position: relative;
+} 
+
+
+.title{
+    font-size: 25px;
+    flex-grow: 1; 
+    text-align: center;
+}
+.body{
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+
+    
+}
+
+
+
+ @media screen and (max-width: 390px) {
+    .title {
+        width: auto;
+        font-size: 10px;    
+    }
+    .carrinho{
+        position: absolute;
+        width: 40px;
+        right: 60%;
+        bottom: 6%;
+    }
+    .simboloDoWtsap {
+        width: 35px;
+        right: 45px; 
+    
+    }
+    .insta{
+        width: 50px;
+        right: 0; 
+    }
+    .menu_geral{
+          
+        width: 150px;
+    }
+    
+    .menu_adicionar {
+        width: 340px;
+        height: 300px;
+        margin-top: 130%;
+        right: 14%;
+    }
+    .input {
+        width: 250px;
+        height: 80px;
+        right: 12%;
+        bottom: 5%;
+    }
+    #limpar {
+        bottom: 3%;
+        right: -16.5%;
+        height: 99px;
+        width: 95px;
+    }
+    .nomeDoProduto, .preco{
+        border-radius: 8px;
+        width: 114px;
+        height: 27px;   
+        margin: 1%;
+        right: 1%;
+    }
+    .botao_Nome{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2%;
+    }
+ }      
