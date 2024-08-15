@@ -6,7 +6,7 @@ document.getElementById('signup-btn').addEventListener ('click', () =>
     auth.createUserWithEmailAndPassword (email, password)
     .then((userCredential) => {
     alert('Usuario cadastrado com sucesso!' );
-    window.location.href='login.html'
+    window.location.href='index.html'
     })
     .catch((error) => {
     alert('Erro ao cadastrar usuario: ' + error.message);
