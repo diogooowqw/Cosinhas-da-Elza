@@ -3,7 +3,7 @@
 let cadastrar=document.querySelector('.cadastrar')
 
 function cadastrarUsuario(){
-   window.location='cadastrar.html'
+   window.location.href='cadastrar.html'
 }
 
 cadastrar.addEventListener('click',cadastrarUsuario)
