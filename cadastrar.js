@@ -15,6 +15,6 @@ document.getElementById('signup-btn').addEventListener ('click', () =>
     let login=document.querySelector('#login')
 
     function  loginUsuario (){
-        window.location='login.html'
+        window.location.href='index.html'
     }
     login.addEventListener('click',loginUsuario)
